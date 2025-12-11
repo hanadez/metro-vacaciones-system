@@ -1,0 +1,1 @@
+default_app_config = 'apps.pdf_generation.apps.PdfGenerationConfig'

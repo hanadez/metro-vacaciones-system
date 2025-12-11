@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de Vacaciones - {{ folio }}</title>
+</head>
+<body>
+    <div class="documento">
+        <!-- COPIA USUARIO -->
+        <div class="copia">
+            <div class="tipo-copia">COPIA USUARIO</div>
+            
+            <div class="encabezado">
+                SISTEMA DE TRANSPORTE COLECTIVO<br>
+                SOLICITUD DE VACACIONES<br>
+                FOLIO: {{ folio }}
+            </div>
+            
+            {% if tiene_conflicto %}
+            <div class="warning">
+                ⚠ ADVERTENCIA: {{ mensaje_warning }}
+            </div>
+            {% endif %}
+            
+            <div class="seccion">
+                <div class="seccion-titulo">DATOS DEL EMPLEADO</div>
+                <table>
+                    <tr>
+                        <td><strong>Nombre:</strong></td>
+                        <td colspan="3">{{ nombre_completo }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>No. Expediente:</strong></td>
+                        <td>{{ numero_expediente }}</td>
+                        <td><strong>Categoría:</strong></td>
+                        <td>{{ categoria_laboral }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Área:</strong></td>
+                        <td>{{ area_nombre }}</td>
+                        <td><strong>Código Área:</strong></td>
+                        <td>{{ area_codigo }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fecha Ingreso:</strong></td>
+                        <td>{{ fecha_ingreso }}</td>
+                        <td><strong>Antigüedad:</strong></td>
+                        <td>{{ antiguedad_años }} años</td>
+                    </tr>
+                    {% if linea_metro %}
+                    <tr>
+                        <td><strong>Línea:</strong></td>
+                        <td colspan="3">{{ linea_metro }}</td>
+                    </tr>
+                    {% endif %}
+                </table>
+            </div>
+            
+            <div class="seccion">
+                <div class="seccion-titulo">DATOS DE LA SOLICITUD</div>
+                <table>
+                    <tr>
+                        <td><strong>Tipo de Vacaciones:</strong></td>
+                        <td colspan="3">{{ tipo_vacacion }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Periodo:</strong></td>
+                        <td>{{ periodo }}</td>
+                        <td><strong>Fecha Solicitud:</strong></td>
+                        <td>{{ fecha_solicitud }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fecha Inicio:</strong></td>
+                        <td>{{ fecha_inicio }}</td>
+                        <td><strong>Fecha Reanuda:</strong></td>
+                        <td>{{ fecha_reanudar }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Días Hábiles:</strong></td>
+                        <td colspan="3">{{ dias_habiles }} días</td>
+                    </tr>
+                    {% if observaciones %}
+                    <tr>
+                        <td><strong>Observaciones:</strong></td>
+                        <td colspan="3">{{ observaciones }}</td>
+                    </tr>
+                    {% endif %}
+                </table>
+            </div>
+            
+            {% if requisitos %}
+            <div class="seccion requisitos">
+                <div class="seccion-titulo">DOCUMENTOS REQUERIDOS</div>
+                <ul>
+                    {% for req in requisitos %}
+                    <li>{{ req }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            
+            <div class="firmas">
+                <div class="firma">
+                    <div class="firma-linea">
+                        <div class="firma-nombre">{{ firmante_interesado.nombre }}</div>
+                        <div class="firma-cargo">{{ firmante_interesado.cargo }}</div>
+                        <div class="firma-cargo">INTERESADO</div>
+                    </div>
+                </div>
+                
+                {% if firmante_encargado %}
+                <div class="firma">
+                    <div class="firma-linea">
+                        <div class="firma-nombre">{{ firmante_encargado.nombre }}</div>
+                        <div class="firma-cargo">{{ firmante_encargado.cargo }}</div>
+                        <div class="firma-cargo">ENCARGADO DEL ÁREA</div>
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if firmante_jefe %}
+                <div class="firma">
+                    <div class="firma-linea">
+                        <div class="firma-nombre">{{ firmante_jefe.nombre }}</div>
+                        <div class="firma-cargo">{{ firmante_jefe.cargo }}</div>
+                        <div class="firma-cargo">JEFE DEL ENCARGADO</div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            
+            <div style="margin-top: 0.3cm; font-size: 7pt; text-align: right;">
+                Impreso: {{ fecha_impresion }}
+            </div>
+        </div>
+        
+        <!-- COPIA ÁREA (IDÉNTICA) -->
+        <div class="copia">
+            <div class="tipo-copia">COPIA ÁREA</div>
+            
+            <div class="encabezado">
+                SISTEMA DE TRANSPORTE COLECTIVO<br>
+                SOLICITUD DE VACACIONES<br>
+                FOLIO: {{ folio }}
+            </div>
+            
+            {% if tiene_conflicto %}
+            <div class="warning">
+                ⚠ ADVERTENCIA: {{ mensaje_warning }}
+            </div>
+            {% endif %}
+            
+            <div class="seccion">
+                <div class="seccion-titulo">DATOS DEL EMPLEADO</div>
+                <table>
+                    <tr>
+                        <td><strong>Nombre:</strong></td>
+                        <td colspan="3">{{ nombre_completo }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>No. Expediente:</strong></td>
+                        <td>{{ numero_expediente }}</td>
+                        <td><strong>Categoría:</strong></td>
+                        <td>{{ categoria_laboral }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Área:</strong></td>
+                        <td>{{ area_nombre }}</td>
+                        <td><strong>Código Área:</strong></td>
+                        <td>{{ area_codigo }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fecha Ingreso:</strong></td>
+                        <td>{{ fecha_ingreso }}</td>
+                        <td><strong>Antigüedad:</strong></td>
+                        <td>{{ antiguedad_años }} años</td>
+                    </tr>
+                    {% if linea_metro %}
+                    <tr>
+                        <td><strong>Línea:</strong></td>
+                        <td colspan="3">{{ linea_metro }}</td>
+                    </tr>
+                    {% endif %}
+                </table>
+            </div>
+            
+            <div class="seccion">
+                <div class="seccion-titulo">DATOS DE LA SOLICITUD</div>
+                <table>
+                    <tr>
+                        <td><strong>Tipo de Vacaciones:</strong></td>
+                        <td colspan="3">{{ tipo_vacacion }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Periodo:</strong></td>
+                        <td>{{ periodo }}</td>
+                        <td><strong>Fecha Solicitud:</strong></td>
+                        <td>{{ fecha_solicitud }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fecha Inicio:</strong></td>
+                        <td>{{ fecha_inicio }}</td>
+                        <td><strong>Fecha Reanuda:</strong></td>
+                        <td>{{ fecha_reanudar }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Días Hábiles:</strong></td>
+                        <td colspan="3">{{ dias_habiles }} días</td>
+                    </tr>
+                    {% if observaciones %}
+                    <tr>
+                        <td><strong>Observaciones:</strong></td>
+                        <td colspan="3">{{ observaciones }}</td>
+                    </tr>
+                    {% endif %}
+                </table>
+            </div>
+            
+            {% if requisitos %}
+            <div class="seccion requisitos">
+                <div class="seccion-titulo">DOCUMENTOS REQUERIDOS</div>
+                <ul>
+                    {% for req in requisitos %}
+                    <li>{{ req }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            
+            <div class="sello-rh">
+                SELLO<br>RECURSOS<br>HUMANOS
+            </div>
+            
+            <div class="firmas">
+                <div class="firma">
+                    <div class="firma-linea">
+                        <div class="firma-nombre">{{ firmante_interesado.nombre }}</div>
+                        <div class="firma-cargo">{{ firmante_interesado.cargo }}</div>
+                        <div class="firma-cargo">INTERESADO</div>
+                    </div>
+                </div>
+                
+                {% if firmante_encargado %}
+                <div class="firma">
+                    <div class="firma-linea">
+                        <div class="firma-nombre">{{ firmante_encargado.nombre }}</div>
+                        <div class="firma-cargo">{{ firmante_encargado.cargo }}</div>
+                        <div class="firma-cargo">ENCARGADO DEL ÁREA</div>
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if firmante_jefe %}
+                <div class="firma">
+                    <div class="firma-linea">
+                        <div class="firma-nombre">{{ firmante_jefe.nombre }}</div>
+                        <div class="firma-cargo">{{ firmante_jefe.cargo }}</div>
+                        <div class="firma-cargo">JEFE DEL ENCARGADO</div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            
+            <div style="margin-top: 0.3cm; font-size: 7pt; text-align: right;">
+                Impreso: {{ fecha_impresion }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
