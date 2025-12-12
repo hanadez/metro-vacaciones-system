@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React from "react";
 import axios from 'axios';
 
 interface User {
@@ -94,7 +95,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     isAuthenticated: !!token && !!user
   };
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return React.createElement(
+    AuthContext.Provider,
+    { value },
+    children
+  );
 };
 
 export const useAuth = () => {

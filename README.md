@@ -1,12 +1,24 @@
 # Sistema de Gestión de Días Económicos y Vacaciones - Metro
 
-Sistema web para la gestión de solicitudes de vacaciones y días económicos de empleados del Sistema de Transporte Colectivo Metro.
+Sistema web completo para la gestión de solicitudes de vacaciones y días económicos de empleados del Sistema de Transporte Colectivo Metro.
+
+## 🚀 Características Principales
+
+- ✅ **Sistema 100% configurable** sin necesidad de modificar código
+- ✅ **Dos roles de usuario**: SuperAdmin y Administrador de Área
+- ✅ **Cálculo automático** de días de vacaciones según antigüedad
+- ✅ **Generación de PDFs oficiales** con formato exacto (doble copia)
+- ✅ **Reglas dinámicas** configurables por área
+- ✅ **Validación de traslapes** y saldos disponibles
+- ✅ **Gestión de firmantes** configurable
+- ✅ **Soporte para reglas especiales** (ej. personal de taquillas)
+- ✅ **Auditoría completa** de todas las operaciones
 
 ## 📋 Requisitos Previos
 
 ### Backend
 - Python 3.10 o superior
-- PostgreSQL 14 o superior
+- Mysql
 - pip (gestor de paquetes de Python)
 
 ### Frontend
@@ -31,8 +43,6 @@ cd backend
 python -m venv venv
 
 # Activar entorno virtual
-# En Linux/Mac:
-source venv/bin/activate
 # En Windows:
 venv\Scripts\activate
 ```
@@ -49,9 +59,8 @@ Crear base de datos MySQL:
 
 ```sql
 CREATE DATABASE metro_vacaciones;
-CREATE USER 'metro_user'@'%' IDENTIFIED BY 'tu_password_seguro';
-GRANT ALL PRIVILEGES ON metro_vacaciones.* TO 'metro_user'@'%';
-FLUSH PRIVILEGES;
+CREATE USER metro_user WITH PASSWORD 'tu_password_seguro';
+GRANT ALL PRIVILEGES ON DATABASE metro_vacaciones TO metro_user;
 ```
 
 #### 2.4 Configurar variables de entorno

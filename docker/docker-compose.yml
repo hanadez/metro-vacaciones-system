@@ -1,0 +1,104 @@
+version: '3.8'
+
+services:
+  # Base de datos PostgreSQL
+  db:
+    image: postgres:14-alpine
+    container_name: metro_vacaciones_db
+    environment:
+      POSTGRES_DB: metro_vacaciones
+      POSTGRES_USER: metro_user
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-secure_password_change_this}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docs/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - metro_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U metro_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Backend Django
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../docker/Dockerfile.backend
+    container_name: metro_vacaciones_backend
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py collectstatic --no-input &&
+             gunicorn config.wsgi:application --bind 0.0.0.0:8000"
+    volumes:
+      - ./backend:/app
+      - media_files:/app/media
+      - static_files:/app/staticfiles
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=${DEBUG:-False}
+      - SECRET_KEY=${SECRET_KEY:-change-this-secret-key-in-production}
+      - DB_NAME=metro_vacaciones
+      - DB_USER=metro_user
+      - DB_PASSWORD=${DB_PASSWORD:-secure_password_change_this}
+      - DB_HOST=db
+      - DB_PORT=5432
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS:-localhost,127.0.0.1}
+      - CORS_ALLOWED_ORIGINS=${CORS_ALLOWED_ORIGINS:-http://localhost:3000}
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - metro_network
+    restart: unless-stopped
+
+  # Frontend React
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../docker/Dockerfile.frontend
+    container_name: metro_vacaciones_frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=${VITE_API_URL:-http://localhost:8000/api}
+    depends_on:
+      - backend
+    networks:
+      - metro_network
+    restart: unless-stopped
+
+  # Nginx (Opcional - para producción)
+  nginx:
+    image: nginx:alpine
+    container_name: metro_vacaciones_nginx
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/nginx.conf:ro
+      - static_files:/usr/share/nginx/html/static
+      - media_files:/usr/share/nginx/html/media
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - metro_network
+    restart: unless-stopped
+    profiles:
+      - production
+
+volumes:
+  postgres_data:
+  media_files:
+  static_files:
+
+networks:
+  metro_network:
+    driver: bridge

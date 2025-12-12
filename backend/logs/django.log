@@ -2000,3 +2000,4 @@ INFO 2025-12-09 13:17:59,798 basehttp "POST /api/auth/update-access/ HTTP/1.1" 2
 INFO 2025-12-09 13:23:01,867 basehttp "POST /api/auth/login/ HTTP/1.1" 200 754
 INFO 2025-12-09 13:23:04,194 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
 INFO 2025-12-10 08:35:16,683 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 14:45:29,942 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\areas\models.py changed, reloading.

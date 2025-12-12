@@ -28,7 +28,7 @@ Usuario = get_user_model()
 def crear_datos_iniciales():
     """Crea todos los datos iniciales necesarios"""
     
-    print("Iniciando carga de datos iniciales...")
+    print("🚀 Iniciando carga de datos iniciales...")
     
     try:
         with transaction.atomic():
@@ -56,20 +56,20 @@ def crear_datos_iniciales():
             # 8. Firmantes de Ejemplo
             crear_firmantes_ejemplo(area_ejemplo)
             
-            print("\nDatos iniciales cargados exitosamente!")
+            print("\n✅ Datos iniciales cargados exitosamente!")
             print_resumen()
             
     except Exception as e:
-        print(f"\nError al cargar datos: {str(e)}")
+        print(f"\n❌ Error al cargar datos: {str(e)}")
         raise
 
 
 def crear_superadmin():
     """Crea el usuario SuperAdmin"""
-    print("\n Creando SuperAdmin...")
+    print("\n📝 Creando SuperAdmin...")
     
     if Usuario.objects.filter(email='superadmin@metro.gob.mx').exists():
-        print("  SuperAdmin ya existe, saltando...")
+        print("   ⚠️  SuperAdmin ya existe, saltando...")
         return
     
     superadmin = Usuario.objects.create_superuser(
@@ -84,7 +84,7 @@ def crear_superadmin():
 
 def crear_configuracion_global():
     """Crea configuraciones globales"""
-    print("\n Creando Configuración Global...")
+    print("\n⚙️  Creando Configuración Global...")
     
     configs = [
         {
@@ -130,7 +130,7 @@ def crear_configuracion_global():
 
 def crear_tipos_vacaciones_globales():
     """Crea tipos de vacaciones globales"""
-    print("\n Creando Tipos de Vacaciones Globales...")
+    print("\n🏖️  Creando Tipos de Vacaciones Globales...")
     
     tipos = [
         {
@@ -181,7 +181,7 @@ def crear_tipos_vacaciones_globales():
 
 def crear_tipos_dias_economicos_globales():
     """Crea tipos de días económicos globales"""
-    print("\n Creando Tipos de Días Económicos Globales...")
+    print("\n💼 Creando Tipos de Días Económicos Globales...")
     
     # Con goce de sueldo
     con_goce = [
@@ -374,7 +374,7 @@ def crear_requisitos_globales():
 
 def crear_area_ejemplo():
     """Crea un área de ejemplo"""
-    print("\n Creando Área de Ejemplo...")
+    print("\n🏢 Creando Área de Ejemplo...")
     
     area, created = Area.objects.update_or_create(
         codigo='OPER_L1',
@@ -396,10 +396,10 @@ def crear_area_ejemplo():
 
 def crear_admin_area_ejemplo(area):
     """Crea un administrador para el área de ejemplo"""
-    print("\n Creando Administrador de Área...")
+    print("\n👤 Creando Administrador de Área...")
     
     if Usuario.objects.filter(email='admin.l1@metro.gob.mx').exists():
-        print("    Admin de área ya existe, saltando...")
+        print("   ⚠️  Admin de área ya existe, saltando...")
         return
     
     admin = Usuario.objects.create_user(
@@ -415,7 +415,7 @@ def crear_admin_area_ejemplo(area):
 
 def crear_firmantes_ejemplo(area):
     """Crea firmantes de ejemplo para el área"""
-    print("\n Creando Firmantes de Ejemplo...")
+    print("\n✍️  Creando Firmantes de Ejemplo...")
     
     firmantes = [
         {
@@ -453,23 +453,23 @@ def print_resumen():
     print("RESUMEN DE DATOS INICIALES")
     print("="*60)
     
-    print(f"\n Usuarios: {Usuario.objects.count()}")
+    print(f"\n👥 Usuarios: {Usuario.objects.count()}")
     print(f"   - SuperAdmin: {Usuario.objects.filter(rol='superadmin').count()}")
     print(f"   - Admin Área: {Usuario.objects.filter(rol='admin_area').count()}")
     
-    print(f"\n Áreas: {Area.objects.count()}")
+    print(f"\n🏢 Áreas: {Area.objects.count()}")
     
-    print(f"\n Configuración Global: {ConfigGlobal.objects.count()} items")
+    print(f"\n⚙️  Configuración Global: {ConfigGlobal.objects.count()} items")
     
-    print(f"\n  Tipos de Vacaciones: {TipoVacacion.objects.filter(area_id=None).count()}")
+    print(f"\n🏖️  Tipos de Vacaciones: {TipoVacacion.objects.filter(area_id=None).count()}")
     
-    print(f"\n Tipos de Días Económicos: {TipoDiaEconomico.objects.filter(area_id=None).count()}")
+    print(f"\n💼 Tipos de Días Económicos: {TipoDiaEconomico.objects.filter(area_id=None).count()}")
     print(f"   - Con goce: {TipoDiaEconomico.objects.filter(area_id=None, categoria='con_goce').count()}")
     print(f"   - Sin goce: {TipoDiaEconomico.objects.filter(area_id=None, categoria='sin_goce').count()}")
     
-    print(f"\nRequisitos: {Requisito.objects.filter(area_id=None).count()}")
+    print(f"\n📋 Requisitos: {Requisito.objects.filter(area_id=None).count()}")
     
-    print(f"\n Firmantes: {Firmante.objects.count()}")
+    print(f"\n✍️  Firmantes: {Firmante.objects.count()}")
     
     print("\n" + "="*60)
     print("CREDENCIALES DE ACCESO")
@@ -482,7 +482,7 @@ def print_resumen():
     print("   Email: admin.l1@metro.gob.mx")
     print("   Password: Admin123!")
     
-    print("\n IMPORTANTE: Cambiar todas las contraseñas en producción!")
+    print("\n⚠️  IMPORTANTE: Cambiar todas las contraseñas en producción!")
     print("="*60 + "\n")
 
 
