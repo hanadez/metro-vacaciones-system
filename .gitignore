@@ -1,5 +1,6 @@
 backend/.env
 backend/venv/
+backend/logs/
 
 frontend/package-lock.json
 frontend/.env
