@@ -1,6 +1,9 @@
 backend/.env
-frontend/node_modules/
 backend/venv/
+
+frontend/package-lock.json
+frontend/.env
+frontend/node_modules/
 
 # Ignore Python cache files
 **/__pycache__/

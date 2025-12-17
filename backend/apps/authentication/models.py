@@ -65,6 +65,7 @@ class Usuario(AbstractBaseUser, PermissionsMixin):
     fecha_creacion = models.DateTimeField(auto_now_add=True)
     fecha_actualizacion = models.DateTimeField(auto_now=True)
     ultimo_acceso = models.DateTimeField(null=True, blank=True)
+    last_login = models.DateTimeField(null=True, blank=True)
     
     objects = UsuarioManager()
     

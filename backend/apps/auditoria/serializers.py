@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import *
 
-class EmpleadoSerializer(serializers.ModelSerializer):
+class LogAuditoriaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Empleado
+        model = LogAuditoria
         fields = '__all__'

@@ -13,10 +13,10 @@ urlpatterns = [
     path('profile/', views.profile_view, name='profile'),
     path('change-password/', views.change_password_view, name='change_password'),
     path('update-access/', views.update_last_access_view, name='update_access'),
-
+    
     # JWT tokens
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-
+    
     # ViewSets
     path('', include(router.urls)),
-] 
+]

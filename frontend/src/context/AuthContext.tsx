@@ -1,7 +1,3 @@
-/**
- * Context de Autenticación
- */
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { authService } from '../services/authService';
 import type { Usuario } from '../types';

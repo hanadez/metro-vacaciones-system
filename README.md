@@ -18,8 +18,28 @@ Sistema web completo para la gestión de solicitudes de vacaciones y días econ�
 
 ### Backend
 - Python 3.10 o superior
-- Mysql
+- Mysql 8.0 o superior instalado
+- Visual Studio C++ Build Tools (Windows) para compilar mysqlclient
 - pip (gestor de paquetes de Python)
+
+**Instalar Visual Studio Build Tools**
+1. Descargar desde: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+2. Instalar "Desktop development with C++"
+3. Reiniciar
+
+Si tienes problemas con mysqlclient, usar PyMySQL:
+
+```bash
+pip uninstall mysqlclient
+pip install pymysql
+```
+
+Luego agregar al inicio de `config/settings.py`:
+
+```python
+import pymysql
+pymysql.install_as_MySQLdb()
+```
 
 ### Frontend
 - Node.js 18 o superior
@@ -56,12 +76,8 @@ pip install -r requirements.txt
 #### 2.3 Configurar base de datos
 
 Crear base de datos MySQL:
+Correr como root el contenido de el archivo "Modelo de Bases de Datos.txt" en Mysql 
 
-```sql
-CREATE DATABASE metro_vacaciones;
-CREATE USER metro_user WITH PASSWORD 'tu_password_seguro';
-GRANT ALL PRIVILEGES ON DATABASE metro_vacaciones TO metro_user;
-```
 
 #### 2.4 Configurar variables de entorno
 
@@ -103,7 +119,7 @@ python manage.py createsuperuser
 #### 2.7 Cargar datos iniciales
 
 ```bash
-python manage.py loaddata initial_data
+python scripts/seed_data.py
 ```
 
 #### 2.8 Ejecutar servidor de desarrollo

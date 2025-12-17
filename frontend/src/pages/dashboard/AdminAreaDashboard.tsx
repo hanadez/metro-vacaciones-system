@@ -1,435 +1,202 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../hooks/useAuth';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/card';
-import { Button } from '../../components/ui/button';
-import { Alert, AlertDescription } from '../../components/ui/alert';
-import { 
-  Calendar, 
-  FileText, 
-  Users, 
-  Clock, 
-  CheckCircle, 
-  XCircle, 
-  AlertCircle,
-  TrendingUp,
-  BarChart,
-  Plus
-} from 'lucide-react';
-import axios from 'axios';
 
-interface StatsArea {
-  solicitudes_pendientes: number;
-  solicitudes_aprobadas_mes: number;
-  solicitudes_rechazadas_mes: number;
-  empleados_activos: number;
-  empleados_con_vacaciones_pendientes: number;
-  promedio_dias_disponibles: number;
-  total_dias_utilizados_mes: number;
-}
-
-interface SolicitudPendiente {
-  id: number;
-  numero_folio: string;
-  empleado_nombre: string;
-  empleado_apellidos: string;
-  tipo_permiso: string;
-  fecha_inicio: string;
-  fecha_fin: string;
-  dias_solicitados: number;
-  fecha_creacion: string;
-}
-
-interface EmpleadoAlerta {
-  id: number;
-  nombre: string;
-  apellidos: string;
-  numero_expediente: string;
-  dias_disponibles: number;
-  dias_por_vencer: number;
-  fecha_vencimiento: string;
-}
-
-const AdminAreaDashboard: React.FC = () => {
-  const { user } = useAuth();
+export const AdminAreaDashboard: React.FC = () => {
+  const { user, logout } = useAuth();
   const navigate = useNavigate();
-  const [stats, setStats] = useState<StatsArea | null>(null);
-  const [solicitudesPendientes, setSolicitudesPendientes] = useState<SolicitudPendiente[]>([]);
-  const [empleadosAlerta, setEmpleadosAlerta] = useState<EmpleadoAlerta[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    cargarDashboard();
-  }, []);
-
-  const cargarDashboard = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-
-      const [statsRes, pendientesRes, alertasRes] = await Promise.all([
-        axios.get('/api/dashboard/admin-area/stats/'),
-        axios.get('/api/solicitudes/?estado=pendiente&limit=5'),
-        axios.get('/api/empleados/alertas-vacaciones/')
-      ]);
-
-      setStats(statsRes.data);
-      setSolicitudesPendientes(pendientesRes.data.results || []);
-      setEmpleadosAlerta(alertasRes.data.results || []);
-    } catch (err) {
-      console.error('Error al cargar dashboard:', err);
-      setError('Error al cargar los datos del dashboard');
-    } finally {
-      setLoading(false);
-    }
+  const handleLogout = () => {
+    logout();
+    navigate('/login');
   };
-
-  const aprobarSolicitud = async (id: number) => {
-    if (!confirm('¿Estás seguro de aprobar esta solicitud?')) return;
-
-    try {
-      await axios.patch(`/api/solicitudes/${id}/`, { estado: 'aprobada' });
-      alert('Solicitud aprobada exitosamente');
-      cargarDashboard();
-    } catch (err) {
-      console.error('Error al aprobar:', err);
-      alert('Error al aprobar la solicitud');
-    }
-  };
-
-  const rechazarSolicitud = async (id: number) => {
-    const motivo = prompt('Motivo del rechazo:');
-    if (!motivo) return;
-
-    try {
-      await axios.patch(`/api/solicitudes/${id}/`, { 
-        estado: 'rechazada',
-        observaciones: motivo 
-      });
-      alert('Solicitud rechazada');
-      cargarDashboard();
-    } catch (err) {
-      console.error('Error al rechazar:', err);
-      alert('Error al rechazar la solicitud');
-    }
-  };
-
-  const formatearFecha = (fecha: string) => {
-    return new Date(fecha).toLocaleDateString('es-MX', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
-    });
-  };
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-      </div>
-    );
-  }
 
   return (
-    <div className="container mx-auto p-6 space-y-6">
+    <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <div className="flex justify-between items-center">
-        <div>
-          <h1 className="text-3xl font-bold text-gray-900">
-            Panel de Administración
-          </h1>
-          <p className="text-gray-600 mt-1">
-            Área: {user?.area?.nombre || 'Sin área asignada'}
-          </p>
-        </div>
-        <Button 
-          onClick={() => navigate('/solicitudes/nueva')}
-          className="bg-blue-600 hover:bg-blue-700"
-        >
-          <Plus className="w-4 h-4 mr-2" />
-          Nueva Solicitud
-        </Button>
-      </div>
-
-      {/* Error Alert */}
-      {error && (
-        <Alert variant="destructive">
-          <AlertCircle className="h-4 w-4" />
-          <AlertDescription>{error}</AlertDescription>
-        </Alert>
-      )}
-
-      {/* Stats Grid */}
-      {stats && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="border-l-4 border-l-yellow-500">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Solicitudes Pendientes
-              </CardTitle>
-              <Clock className="h-5 w-5 text-yellow-600" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-yellow-600">
-                {stats.solicitudes_pendientes}
-              </div>
-              <p className="text-xs text-muted-foreground mt-1">
-                Requieren tu atención
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-l-green-500">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Aprobadas (Este Mes)
-              </CardTitle>
-              <CheckCircle className="h-5 w-5 text-green-600" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-green-600">
-                {stats.solicitudes_aprobadas_mes}
-              </div>
-              <p className="text-xs text-muted-foreground mt-1">
-                {stats.total_dias_utilizados_mes} días totales
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-l-blue-500">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Empleados Activos
-              </CardTitle>
-              <Users className="h-5 w-5 text-blue-600" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-blue-600">
-                {stats.empleados_activos}
-              </div>
-              <p className="text-xs text-muted-foreground mt-1">
-                En tu área
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-l-purple-500">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Promedio Días Disponibles
-              </CardTitle>
-              <Calendar className="h-5 w-5 text-purple-600" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-purple-600">
-                {stats.promedio_dias_disponibles.toFixed(1)}
-              </div>
-              <p className="text-xs text-muted-foreground mt-1">
-                Por empleado
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      )}
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Solicitudes Pendientes */}
-        <Card>
-          <CardHeader>
-            <div className="flex justify-between items-center">
-              <div>
-                <CardTitle className="flex items-center">
-                  <Clock className="w-5 h-5 mr-2 text-yellow-600" />
-                  Solicitudes Pendientes
-                </CardTitle>
-                <CardDescription>
-                  Requieren aprobación o rechazo
-                </CardDescription>
-              </div>
-              <Button 
-                variant="outline" 
-                size="sm"
-                onClick={() => navigate('/solicitudes?estado=pendiente')}
+      <nav className="bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between h-16">
+            <div className="flex items-center">
+              <h1 className="text-xl font-bold text-gray-900">
+                Panel de Administrador - {user?.area?.nombre || 'Área'}
+              </h1>
+            </div>
+            <div className="flex items-center space-x-4">
+              <span className="text-sm text-gray-600">
+                {user?.nombre} {user?.apellidos}
+              </span>
+              <button
+                onClick={handleLogout}
+                className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition"
               >
-                Ver Todas
-              </Button>
+                Cerrar Sesión
+              </button>
             </div>
-          </CardHeader>
-          <CardContent>
-            {solicitudesPendientes.length === 0 ? (
-              <div className="text-center py-8 text-gray-500">
-                <CheckCircle className="w-12 h-12 mx-auto mb-2 opacity-50" />
-                <p>No hay solicitudes pendientes</p>
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {solicitudesPendientes.map((solicitud) => (
-                  <div
-                    key={solicitud.id}
-                    className="border rounded-lg p-4 space-y-3"
-                  >
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-semibold text-gray-900">
-                          {solicitud.numero_folio}
-                        </p>
-                        <p className="text-sm text-gray-600">
-                          {solicitud.empleado_nombre} {solicitud.empleado_apellidos}
-                        </p>
-                        <p className="text-xs text-gray-500 mt-1">
-                          {solicitud.tipo_permiso} - {solicitud.dias_solicitados} días
-                        </p>
-                        <p className="text-xs text-gray-500">
-                          {formatearFecha(solicitud.fecha_inicio)} al {formatearFecha(solicitud.fecha_fin)}
-                        </p>
-                      </div>
-                      <span className="text-xs text-gray-500">
-                        {formatearFecha(solicitud.fecha_creacion)}
-                      </span>
-                    </div>
-                    <div className="flex space-x-2">
-                      <Button
-                        size="sm"
-                        variant="default"
-                        className="flex-1 bg-green-600 hover:bg-green-700"
-                        onClick={() => aprobarSolicitud(solicitud.id)}
-                      >
-                        <CheckCircle className="w-4 h-4 mr-1" />
-                        Aprobar
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="flex-1 border-red-300 text-red-600 hover:bg-red-50"
-                        onClick={() => rechazarSolicitud(solicitud.id)}
-                      >
-                        <XCircle className="w-4 h-4 mr-1" />
-                        Rechazar
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => navigate(`/solicitudes/${solicitud.id}`)}
-                      >
-                        Ver
-                      </Button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </CardContent>
-        </Card>
+          </div>
+        </div>
+      </nav>
 
-        {/* Alertas de Empleados */}
-        <Card>
-          <CardHeader>
-            <div className="flex justify-between items-center">
-              <div>
-                <CardTitle className="flex items-center">
-                  <AlertCircle className="w-5 h-5 mr-2 text-orange-600" />
-                  Empleados con Días por Vencer
-                </CardTitle>
-                <CardDescription>
-                  Días de vacaciones próximos a vencer
-                </CardDescription>
+      {/* Content */}
+      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <div className="px-4 py-6 sm:px-0">
+          {/* Stats Cards */}
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+            <div className="bg-white overflow-hidden shadow rounded-lg">
+              <div className="p-5">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0">
+                    <svg
+                      className="h-6 w-6 text-gray-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="ml-5 w-0 flex-1">
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 truncate">
+                        Empleados
+                      </dt>
+                      <dd className="text-lg font-semibold text-gray-900">-</dd>
+                    </dl>
+                  </div>
+                </div>
               </div>
             </div>
-          </CardHeader>
-          <CardContent>
-            {empleadosAlerta.length === 0 ? (
-              <div className="text-center py-8 text-gray-500">
-                <CheckCircle className="w-12 h-12 mx-auto mb-2 opacity-50" />
-                <p>No hay alertas de vencimiento</p>
-              </div>
-            ) : (
-              <div className="space-y-3">
-                {empleadosAlerta.map((empleado) => (
-                  <div
-                    key={empleado.id}
-                    className="border border-orange-200 bg-orange-50 rounded-lg p-3"
-                  >
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="font-medium text-gray-900">
-                          {empleado.nombre} {empleado.apellidos}
-                        </p>
-                        <p className="text-xs text-gray-600">
-                          Exp: {empleado.numero_expediente}
-                        </p>
-                        <p className="text-sm text-orange-700 font-medium mt-1">
-                          {empleado.dias_por_vencer} días vencen el {formatearFecha(empleado.fecha_vencimiento)}
-                        </p>
-                      </div>
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        onClick={() => navigate(`/empleados/${empleado.id}`)}
-                      >
-                        Ver
-                      </Button>
-                    </div>
+
+            <div className="bg-white overflow-hidden shadow rounded-lg">
+              <div className="p-5">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0">
+                    <svg
+                      className="h-6 w-6 text-yellow-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
                   </div>
-                ))}
+                  <div className="ml-5 w-0 flex-1">
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 truncate">
+                        Pendientes
+                      </dt>
+                      <dd className="text-lg font-semibold text-gray-900">-</dd>
+                    </dl>
+                  </div>
+                </div>
               </div>
-            )}
-          </CardContent>
-        </Card>
-      </div>
+            </div>
 
-      {/* Accesos Rápidos */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <Card 
-          className="cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-blue-500"
-          onClick={() => navigate('/solicitudes/nueva')}
-        >
-          <CardHeader>
-            <CardTitle className="flex items-center text-blue-700">
-              <FileText className="w-5 h-5 mr-2" />
-              Nueva Solicitud
-            </CardTitle>
-          </CardHeader>
-        </Card>
+            <div className="bg-white overflow-hidden shadow rounded-lg">
+              <div className="p-5">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0">
+                    <svg
+                      className="h-6 w-6 text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="ml-5 w-0 flex-1">
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 truncate">
+                        Aprobadas
+                      </dt>
+                      <dd className="text-lg font-semibold text-gray-900">-</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <Card 
-          className="cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-green-500"
-          onClick={() => navigate('/solicitudes')}
-        >
-          <CardHeader>
-            <CardTitle className="flex items-center text-green-700">
-              <BarChart className="w-5 h-5 mr-2" />
-              Ver Solicitudes
-            </CardTitle>
-          </CardHeader>
-        </Card>
+            <div className="bg-white overflow-hidden shadow rounded-lg">
+              <div className="p-5">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0">
+                    <svg
+                      className="h-6 w-6 text-blue-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="ml-5 w-0 flex-1">
+                    <dl>
+                      <dt className="text-sm font-medium text-gray-500 truncate">
+                        Total Solicitudes
+                      </dt>
+                      <dd className="text-lg font-semibold text-gray-900">-</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <Card 
-          className="cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-purple-500"
-          onClick={() => navigate('/empleados')}
-        >
-          <CardHeader>
-            <CardTitle className="flex items-center text-purple-700">
-              <Users className="w-5 h-5 mr-2" />
-              Empleados
-            </CardTitle>
-          </CardHeader>
-        </Card>
-
-        <Card 
-          className="cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-orange-500"
-          onClick={() => navigate('/reportes')}
-        >
-          <CardHeader>
-            <CardTitle className="flex items-center text-orange-700">
-              <TrendingUp className="w-5 h-5 mr-2" />
-              Reportes
-            </CardTitle>
-          </CardHeader>
-        </Card>
-      </div>
+          {/* Quick Actions */}
+          <div className="bg-white shadow rounded-lg p-6">
+            <h2 className="text-lg font-medium text-gray-900 mb-4">
+              Acciones Rápidas
+            </h2>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <button className="p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 transition text-left">
+                <div className="font-medium text-gray-900">
+                  Nueva Solicitud
+                </div>
+                <div className="text-sm text-gray-500 mt-1">
+                  Crear solicitud de vacaciones o día económico
+                </div>
+              </button>
+              <button className="p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 transition text-left">
+                <div className="font-medium text-gray-900">
+                  Gestionar Empleados
+                </div>
+                <div className="text-sm text-gray-500 mt-1">
+                  Ver y administrar empleados del área
+                </div>
+              </button>
+              <button className="p-4 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-500 transition text-left">
+                <div className="font-medium text-gray-900">
+                  Configurar Firmantes
+                </div>
+                <div className="text-sm text-gray-500 mt-1">
+                  Configurar firmantes para los documentos
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
-
-export default AdminAreaDashboard;

@@ -2001,3 +2001,888 @@ INFO 2025-12-09 13:23:01,867 basehttp "POST /api/auth/login/ HTTP/1.1" 200 754
 INFO 2025-12-09 13:23:04,194 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
 INFO 2025-12-10 08:35:16,683 autoreload Watching for file changes with StatReloader
 INFO 2025-12-11 14:45:29,942 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\areas\models.py changed, reloading.
+INFO 2025-12-12 08:55:38,990 autoreload Watching for file changes with StatReloader
+WARNING 2025-12-12 08:56:06,468 base Session data corrupted
+INFO 2025-12-12 08:56:06,593 basehttp "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-12-12 08:56:09,372 base Session data corrupted
+INFO 2025-12-12 08:56:10,100 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+INFO 2025-12-12 08:56:10,667 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:10,692 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:10,705 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:10,705 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:10,705 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:10,705 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:10,705 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2025-12-12 08:56:11,976 log Not Found: /favicon.ico
+WARNING 2025-12-12 08:56:11,976 basehttp "GET /favicon.ico HTTP/1.1" 404 3044
+WARNING 2025-12-12 08:56:28,934 base Session data corrupted
+INFO 2025-12-12 08:56:31,545 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 08:56:35,441 basehttp "GET /admin/ HTTP/1.1" 200 5950
+INFO 2025-12-12 08:56:35,554 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:36,132 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:36,132 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-12-12 08:56:47,723 basehttp "GET /admin/authentication/usuario/ HTTP/1.1" 200 13054
+INFO 2025-12-12 08:56:48,256 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-12 08:56:48,300 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2025-12-12 08:56:48,300 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2025-12-12 08:56:48,302 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2025-12-12 08:56:48,304 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2025-12-12 08:56:48,310 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-12 08:56:48,310 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-12-12 08:56:48,311 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-12 08:56:48,322 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-12-12 08:56:48,362 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2025-12-12 08:56:48,401 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2025-12-12 08:56:48,411 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-12-12 08:56:50,405 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8570
+INFO 2025-12-12 08:56:50,509 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-12-12 08:56:50,558 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-12-12 09:17:00,190 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\manage.py changed, reloading.
+INFO 2025-12-12 09:17:03,112 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 09:17:58,343 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\wsgi.py changed, reloading.
+INFO 2025-12-12 09:18:00,298 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 09:31:10,237 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\admin.py changed, reloading.
+INFO 2025-12-12 09:31:12,647 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 09:31:36,895 basehttp "GET /admin/ HTTP/1.1" 200 5950
+INFO 2025-12-12 09:31:47,424 basehttp "GET /admin/authentication/usuario/ HTTP/1.1" 200 9123
+INFO 2025-12-12 09:31:49,813 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8570
+INFO 2025-12-12 09:33:24,049 basehttp "GET /admin/authentication/usuario/ HTTP/1.1" 200 9123
+INFO 2025-12-12 09:33:26,315 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8570
+INFO 2025-12-12 09:35:42,533 basehttp "GET /admin/ HTTP/1.1" 200 5950
+INFO 2025-12-12 09:41:45,547 basehttp "GET /admin/ HTTP/1.1" 200 5950
+INFO 2025-12-12 09:42:55,208 basehttp "GET /admin/ HTTP/1.1" 200 5950
+INFO 2025-12-12 09:43:05,340 basehttp "GET /admin/ HTTP/1.1" 200 5950
+INFO 2025-12-12 09:43:08,723 basehttp "GET /admin/ HTTP/1.1" 200 5950
+INFO 2025-12-12 09:43:17,714 basehttp - Broken pipe from ('127.0.0.1', 61412)
+INFO 2025-12-12 09:43:19,847 basehttp "GET /admin/authentication/usuario/ HTTP/1.1" 200 9123
+INFO 2025-12-12 09:43:22,185 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8570
+INFO 2025-12-12 11:41:14,216 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\configuracion\models.py changed, reloading.
+INFO 2025-12-12 11:41:21,643 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 12:44:47,351 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 12:56:47,221 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 12:57:10,480 basehttp - Broken pipe from ('127.0.0.1', 59985)
+INFO 2025-12-12 12:57:11,372 basehttp "GET /admin/ HTTP/1.1" 200 12968
+INFO 2025-12-12 12:58:06,184 basehttp "GET /admin/configuracion/reglaarea/ HTTP/1.1" 200 12700
+INFO 2025-12-12 12:58:08,818 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8570
+INFO 2025-12-12 12:58:14,433 basehttp "GET /admin/configuracion/configglobal/ HTTP/1.1" 200 14650
+INFO 2025-12-12 12:58:16,624 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8570
+INFO 2025-12-12 12:59:21,841 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\urls.py changed, reloading.
+INFO 2025-12-12 12:59:24,116 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 13:00:46,200 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\settings.py changed, reloading.
+INFO 2025-12-12 13:00:48,563 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 13:02:34,423 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\settings.py changed, reloading.
+INFO 2025-12-12 13:02:36,505 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 13:03:21,576 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\settings.py changed, reloading.
+INFO 2025-12-12 13:03:22,906 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 13:03:37,979 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\settings.py changed, reloading.
+INFO 2025-12-12 13:03:39,374 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 16:15:58,862 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 16:17:35,775 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:17:37,744 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+INFO 2025-12-12 16:19:07,903 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 16:19:11,724 basehttp "GET /admin/configuracion/configglobal/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:19:11,889 basehttp "GET /admin/login/?next=/admin/configuracion/configglobal/ HTTP/1.1" 200 4287
+INFO 2025-12-12 16:19:16,443 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:19:16,505 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+ERROR 2025-12-12 16:19:42,962 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'usuarios.password' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\forms.py", line 250, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'usuarios.password' in 'field list'")
+ERROR 2025-12-12 16:19:43,061 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 500 276049
+INFO 2025-12-12 16:23:34,223 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:23:34,223 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+ERROR 2025-12-12 16:23:58,302 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'usuarios.last_login' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\forms.py", line 250, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'usuarios.last_login' in 'field list'")
+ERROR 2025-12-12 16:23:58,386 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 500 276075
+INFO 2025-12-12 16:29:39,815 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\models.py changed, reloading.
+INFO 2025-12-12 16:29:42,833 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 16:29:52,737 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:29:52,805 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+ERROR 2025-12-12 16:30:17,384 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'usuarios.is_superuser' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\forms.py", line 250, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'usuarios.is_superuser' in 'field list'")
+ERROR 2025-12-12 16:30:17,480 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 500 275471
+INFO 2025-12-12 16:32:54,339 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:32:54,343 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+ERROR 2025-12-12 16:33:14,127 log Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'usuarios.is_staff' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+       ^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+                   ^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\forms.py", line 250, in clean
+    self.user_cache = authenticate(
+                      ^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'usuarios.is_staff' in 'field list'")
+ERROR 2025-12-12 16:33:14,180 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 500 275419
+INFO 2025-12-12 16:34:35,356 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:34:35,361 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+INFO 2025-12-12 16:34:52,008 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4480
+INFO 2025-12-12 16:35:02,055 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4480
+INFO 2025-12-12 16:35:07,027 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4480
+INFO 2025-12-12 16:39:41,600 autoreload Watching for file changes with StatReloader
+INFO 2025-12-12 16:39:45,307 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:39:45,353 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+INFO 2025-12-12 16:39:58,409 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-12 16:40:00,688 basehttp "GET /admin/ HTTP/1.1" 200 12968
+INFO 2025-12-16 11:15:36,652 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 11:15:54,075 basehttp "GET /admin/ HTTP/1.1" 200 12968
+INFO 2025-12-16 11:15:54,204 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-12-16 11:15:54,217 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-12-16 11:15:54,218 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-12-16 11:15:54,218 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-12-16 11:15:54,219 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-12-16 11:15:54,219 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-12-16 11:15:54,219 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-12-16 11:15:54,239 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-12-16 11:15:54,239 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2025-12-16 11:15:54,510 log Not Found: /favicon.ico
+WARNING 2025-12-16 11:15:54,511 basehttp "GET /favicon.ico HTTP/1.1" 404 3044
+INFO 2025-12-16 11:16:04,482 basehttp "POST /admin/logout/ HTTP/1.1" 200 3627
+INFO 2025-12-16 11:16:09,475 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-16 11:16:09,577 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+INFO 2025-12-16 11:16:09,593 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-12-16 11:16:27,698 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-16 11:16:29,800 basehttp "GET /admin/ HTTP/1.1" 200 12968
+INFO 2025-12-16 11:16:37,243 basehttp "POST /admin/logout/ HTTP/1.1" 200 3627
+INFO 2025-12-16 11:16:56,006 basehttp "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2025-12-16 11:16:56,439 log Unauthorized: /api/auth/login/
+WARNING 2025-12-16 11:16:56,439 basehttp "POST /api/auth/login/ HTTP/1.1" 401 202
+INFO 2025-12-16 11:16:56,439 basehttp "OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+WARNING 2025-12-16 11:16:56,439 log Unauthorized: /api/auth/token/refresh/
+WARNING 2025-12-16 11:16:56,459 basehttp "POST /api/auth/token/refresh/ HTTP/1.1" 401 72
+ERROR 2025-12-16 11:17:39,809 log Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\views.py", line 35, in login_view
+    user.save(update_fields=['ultimo_acceso'])
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\base.py", line 797, in save
+    raise ValueError(
+ValueError: The following fields do not exist in this model, are m2m fields, or are non-concrete fields: ultimo_acceso
+ERROR 2025-12-16 11:17:39,809 basehttp "POST /api/auth/login/ HTTP/1.1" 500 117700
+ERROR 2025-12-16 11:17:50,017 log Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\views.py", line 35, in login_view
+    user.save(update_fields=['ultimo_acceso'])
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\base.py", line 797, in save
+    raise ValueError(
+ValueError: The following fields do not exist in this model, are m2m fields, or are non-concrete fields: ultimo_acceso
+ERROR 2025-12-16 11:17:50,034 basehttp "POST /api/auth/login/ HTTP/1.1" 500 117700
+INFO 2025-12-16 11:17:54,427 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-16 11:17:54,432 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+ERROR 2025-12-16 11:18:14,934 log Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\views.py", line 35, in login_view
+    user.save(update_fields=['ultimo_acceso'])
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "D:\Area de Trabajo Django\metro-vacaciones-system\backend\venv\Lib\site-packages\django\db\models\base.py", line 797, in save
+    raise ValueError(
+ValueError: The following fields do not exist in this model, are m2m fields, or are non-concrete fields: ultimo_acceso
+ERROR 2025-12-16 11:18:14,936 basehttp "POST /api/auth/login/ HTTP/1.1" 500 117700
+INFO 2025-12-16 11:29:04,086 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\models.py changed, reloading.
+INFO 2025-12-16 11:29:07,294 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 11:31:08,067 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\models.py changed, reloading.
+INFO 2025-12-16 11:31:09,732 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 11:31:44,927 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 11:31:44,937 basehttp "OPTIONS /api/auth/update-access/ HTTP/1.1" 200 0
+INFO 2025-12-16 11:31:47,015 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 11:32:59,036 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 11:33:01,106 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 11:34:04,796 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 11:34:06,861 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 11:34:31,470 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 11:34:33,542 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 12:22:50,006 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 12:22:52,243 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 13:29:19,976 basehttp "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-12-16 13:29:23,321 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 13:29:25,639 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 13:29:41,492 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 13:29:43,577 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 13:34:51,413 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\serializers.py changed, reloading.
+INFO 2025-12-16 13:35:11,347 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:35:31,996 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\views.py changed, reloading.
+INFO 2025-12-16 13:35:33,704 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:36:09,223 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\views.py changed, reloading.
+INFO 2025-12-16 13:36:10,375 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:36:38,127 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\permissions.py changed, reloading.
+INFO 2025-12-16 13:36:39,316 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:37:37,217 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\urls.py changed, reloading.
+INFO 2025-12-16 13:37:38,510 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:38:32,264 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\areas\urls.py changed, reloading.
+INFO 2025-12-16 13:38:33,915 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:39:56,824 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\admin.py changed, reloading.
+INFO 2025-12-16 13:39:58,240 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:40:26,872 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\apps\authentication\admin.py changed, reloading.
+INFO 2025-12-16 13:40:28,065 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:40:54,870 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\settings.py changed, reloading.
+INFO 2025-12-16 13:40:56,112 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:43:27,606 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\settings.py changed, reloading.
+INFO 2025-12-16 13:43:29,003 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:44:29,318 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\settings.py changed, reloading.
+INFO 2025-12-16 13:44:30,517 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:45:06,663 autoreload D:\Area de Trabajo Django\metro-vacaciones-system\backend\config\settings.py changed, reloading.
+INFO 2025-12-16 13:45:07,837 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 13:46:18,329 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-16 13:46:18,837 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+INFO 2025-12-16 13:46:19,189 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2025-12-16 13:46:19,205 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2025-12-16 13:46:19,207 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-12-16 13:46:19,226 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+INFO 2025-12-16 13:46:19,227 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO 2025-12-16 13:46:19,236 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-12-16 13:46:19,236 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2025-12-16 13:46:19,453 log Not Found: /favicon.ico
+WARNING 2025-12-16 13:46:19,454 basehttp "GET /favicon.ico HTTP/1.1" 404 3044
+INFO 2025-12-16 13:46:30,482 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-16 13:46:33,132 basehttp "GET /admin/ HTTP/1.1" 200 12968
+INFO 2025-12-16 13:46:33,147 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-12-16 13:46:33,173 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-12-16 13:46:33,173 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-12-16 13:46:39,297 basehttp "GET /admin/authentication/usuario/ HTTP/1.1" 200 17231
+INFO 2025-12-16 13:46:39,371 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+INFO 2025-12-16 13:46:39,429 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-12-16 13:46:39,464 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2025-12-16 13:46:39,465 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2025-12-16 13:46:39,465 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2025-12-16 13:46:39,465 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-12-16 13:46:39,473 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-12-16 13:46:39,473 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-12-16 13:46:39,473 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-12-16 13:46:39,565 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2025-12-16 13:46:39,565 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2025-12-16 13:46:39,582 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-12-16 13:46:41,564 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 8570
+INFO 2025-12-16 13:46:41,596 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-12-16 13:46:41,600 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-12-16 13:46:53,258 basehttp - Broken pipe from ('127.0.0.1', 61506)
+INFO 2025-12-16 13:46:55,255 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-16 13:46:57,522 basehttp "GET /admin/ HTTP/1.1" 200 12968
+INFO 2025-12-16 13:47:10,366 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 13:47:10,366 basehttp "OPTIONS /api/auth/update-access/ HTTP/1.1" 200 0
+INFO 2025-12-16 13:47:12,469 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 13:49:13,852 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 13:49:15,921 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 13:49:32,367 basehttp "POST /api/auth/login/ HTTP/1.1" 200 738
+INFO 2025-12-16 13:49:34,469 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 16:13:00,348 autoreload Watching for file changes with StatReloader
+INFO 2025-12-16 16:14:10,392 basehttp "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-12-16 16:14:13,532 basehttp "POST /api/auth/login/ HTTP/1.1" 200 751
+INFO 2025-12-16 16:14:13,536 basehttp "OPTIONS /api/auth/update-access/ HTTP/1.1" 200 0
+INFO 2025-12-16 16:14:15,667 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 16:14:48,573 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-16 16:14:48,982 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4233
+INFO 2025-12-16 16:15:07,232 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-12-16 16:15:09,371 basehttp "GET /admin/ HTTP/1.1" 200 12963
+INFO 2025-12-16 16:15:35,866 basehttp "POST /api/auth/login/ HTTP/1.1" 200 720
+INFO 2025-12-16 16:15:37,952 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 16:15:58,796 basehttp "POST /api/auth/login/ HTTP/1.1" 200 720
+INFO 2025-12-16 16:16:00,931 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 16:16:12,928 basehttp "POST /api/auth/login/ HTTP/1.1" 200 720
+INFO 2025-12-16 16:16:14,993 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-16 16:16:30,973 basehttp "POST /api/auth/login/ HTTP/1.1" 200 720
+INFO 2025-12-16 16:16:33,026 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-17 09:16:01,518 basehttp "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2025-12-17 09:16:01,996 log Unauthorized: /api/auth/login/
+WARNING 2025-12-17 09:16:01,996 basehttp "POST /api/auth/login/ HTTP/1.1" 401 202
+INFO 2025-12-17 09:16:02,011 basehttp "OPTIONS /api/auth/token/refresh/ HTTP/1.1" 200 0
+INFO 2025-12-17 09:16:05,699 basehttp "POST /api/auth/token/refresh/ HTTP/1.1" 200 489
+INFO 2025-12-17 09:16:08,484 basehttp "POST /api/auth/login/ HTTP/1.1" 200 720
+INFO 2025-12-17 09:16:08,484 basehttp "OPTIONS /api/auth/update-access/ HTTP/1.1" 200 0
+INFO 2025-12-17 09:16:10,770 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-17 09:16:24,567 basehttp "POST /api/auth/login/ HTTP/1.1" 200 751
+INFO 2025-12-17 09:16:26,650 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
+INFO 2025-12-17 09:16:41,836 basehttp "POST /api/auth/login/ HTTP/1.1" 200 751
+INFO 2025-12-17 09:16:43,965 basehttp "POST /api/auth/update-access/ HTTP/1.1" 200 40
