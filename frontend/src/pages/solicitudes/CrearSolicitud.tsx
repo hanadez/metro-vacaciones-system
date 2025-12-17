@@ -1,3 +1,8 @@
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { MainLayout } from '../../components/layout/MainLayout';
+import { Alert } from '../../components/common/Alert';
+import { solicitudesService } from '../../services/solicitudesService';
 import { useLocation } from 'react-router-dom';
 import { SolicitudForm } from '../../components/forms/SolicitudForm';
 import { empleadosService } from '../../services/empleadosService';

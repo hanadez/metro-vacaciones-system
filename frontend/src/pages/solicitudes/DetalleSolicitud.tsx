@@ -1,3 +1,11 @@
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { MainLayout } from '../../components/layout/MainLayout';
+import { Button } from '../../components/common/Button';
+import { Loading } from '../../components/common/Loading';
+import { Alert } from '../../components/common/Alert';
+import { solicitudesService } from '../../services/solicitudesService';
+import type { Solicitud } from '../../types';
 import { useParams } from 'react-router-dom';
 
 export const DetalleSolicitud: React.FC = () => {

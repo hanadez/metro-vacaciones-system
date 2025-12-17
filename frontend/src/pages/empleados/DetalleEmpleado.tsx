@@ -1,3 +1,12 @@
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { MainLayout } from '../../components/layout/MainLayout';
+import { Button } from '../../components/common/Button';
+import { Loading } from '../../components/common/Loading';
+import { Alert } from '../../components/common/Alert';
+import { empleadosService } from '../../services/empleadosService';
+import type { Empleado } from '../../types';
+import { EmpleadoForm } from '../../components/forms/EmpleadoForm';
 import { useParams } from 'react-router-dom';
 import type { SaldoVacaciones } from '../../types';
 

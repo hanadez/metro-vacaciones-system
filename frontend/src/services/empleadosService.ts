@@ -1,3 +1,4 @@
+import api from '../config/api';
 import type { Empleado, EmpleadoFormData, SaldoVacaciones } from '../types';
 
 export const empleadosService = {

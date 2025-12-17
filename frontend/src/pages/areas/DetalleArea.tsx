@@ -1,3 +1,12 @@
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { MainLayout } from '../../components/layout/MainLayout';
+import { Button } from '../../components/common/Button';
+import { Loading } from '../../components/common/Loading';
+import { Alert } from '../../components/common/Alert';
+import { areasService } from '../../services/areasService';
+import type { Area } from '../../types';
+import { AreaForm } from '../../components/forms/AreaForm';
 import { useParams } from 'react-router-dom';
 
 export const DetalleArea: React.FC = () => {

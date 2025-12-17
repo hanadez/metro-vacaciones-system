@@ -1,3 +1,4 @@
+import api from '../config/api';
 import type {
   ConfigGlobal,
   TipoVacacion,

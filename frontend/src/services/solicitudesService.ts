@@ -1,3 +1,4 @@
+import api from '../config/api';
 import type { Solicitud, SolicitudFormData, PaginatedResponse } from '../types';
 
 export const solicitudesService = {
